@@ -1,6 +1,9 @@
 name: Docker
 
 on:
+  schedule:
+    - cron: "0 22 * * *"
+
   push:
     # Publish `master` as Docker `latest` image.
     branches:
